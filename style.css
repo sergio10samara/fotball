@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Rouge+Script&family=Rowdies:wght@300&family=Rozha+One&family=Rubik+Beastly&display=swap');
+   body{
+    margin: 0;
+    background-color: #521194;
+   }
+    
+    * {
+        box-sizing: border-box;
+        font-family: 'Rouge Script', cursive;
+    }
+    img {
+      max-width: 100%;
+    }
+
+  header {
+    background-image:url(images/шапка.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+
+h1 {
+color: #03C2FF;
+font-family: 'Rubik Beastly', system-ui;
+-webkit-text-stroke: 0.1px black;
+
+
+}
+
+.right {
+  font-family: 'Rowdies', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+ 
+.right__column {
+  width: 50%;
+}
+.right img {
+ width: 50%;
+}
+
+.left {
+  font-family: 'Rozha One', serif;
+  text-align: center;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left img {
+  width: 50%;
+}
+
+.left__column {
+  width: 50%;
+}
+
+.section {
+  text-align: center;
+  color: white;
+}
+
+
+footer {
+  font-size: 36px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 950px;
+  color: white;
+  font-family: 'Honk', system-ui;
+}
+
+.section img {
+  width: 100%;
+  height: 685px;
+  object-fit: cover;
+}
+
+.class1 {
+  color: black;
+}
+
+.class2 {
+  color: black;
+}
+
+.class3 {
+  color: black;
+}
+
+@media(max-width:820px) {
+.left,.right,.section,.section-reverse {
+  flex-direction: column;
+}
+
+.left img, .right img {
+  width: 100%;
+}
+}
