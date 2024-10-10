@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="#" nethod="#">
+    <input type="mail" placeholder="Логин/почта" name="login"required>
+    <input type="password" placeholder="Пароль" name="password" required>
+    <buttom type="buttom" onclick=handle()>отправить</buttom>
+  </form>
+
+  <script>
+    function handle() {
+      alert("Форма отправлена!");
+      let inputs = document.querySelectorAll("input");
+      let inputs_values = [];
+      for (let i = 0; i < inputs.lenght; i++) {
+        inputs_values.pysh(inputs[i].value);
+      }
+
+      alert("Dfi логин: " + inputs_values[0] + "\n" + "Ваш пароль: " + inputs_values[1]);
+    }
+  </script>
+</body>
+</html>
